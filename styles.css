@@ -24,20 +24,56 @@
 	position: relative;
 }
 
-. .credit-card .card-data-row {
+.credit-card .card-data-row {
 	display: flex;
 	margin-bottom: auto;
 }
 
 .credit-card .logo {
-	height: 30px;
+	height: 40px;
 	width: 50px;
 	flex-grow: 0;
-	margin-left: 83%;
 }
 
 .credit-card .brand-name {
 	flex-grow: 1;
 	font-size: 1.25rem;
 	font-weight: bold;
+}
+
+.credit-card .form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.credit-card fieldset {
+	border: none;
+	padding: 0;
+	margin 0;
+}
+
+.credit-card fieldset legend{
+	visibility: hidden;
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: -200vh;
+}
+
+.credit-card .horizontal-input-stack {
+display: flex;
+gap: .5rem;
+}
+
+.credit-card .cc-inputs input {
+	width: 4ch;
+	font-family: monospace;
+}
+
+.credit-card input,
+.credit-card select {
+	padding: .25em .5em;
+	border: none;
+	border-radius: .25em;
 }
