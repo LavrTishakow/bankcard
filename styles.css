@@ -1,10 +1,9 @@
-.credit-card{
+.credit-card {
 	color: white;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial;
 	position: relative;
 }
 
-.credit-card .front,
-.credit-card .back {
+.credit-card .front .credit-card .back {
 	background-color: hsl(200, 80%, 30%);
 }
