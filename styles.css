@@ -7,7 +7,7 @@
 .credit-card .front,
 .credit-card .back {
 	background-color: hsl(200, 80%, 30%);
-	border: hsl(200, 80%, 10%);
+	border: 1px solid hsl(200, 80%, 10%);
 	border-radius: 0.5rem;
 	width: 325px;
 	height: 150px;
@@ -130,4 +130,15 @@
 	left: 0;
 	right: 0;
 	top: 1.5rem;
+}
+
+.credit-card .cvc-group {
+	position: absolute;
+	bottom: 3.25rem;
+	right: 0.5rem;
+}
+
+.credit-card .cvc-input {
+	width: 3ch;
+	font-family: monospace;
 }
