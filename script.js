@@ -16,7 +16,14 @@ document.addEventListener("keydown", e => {
 
 	switch (key) {
 		case "ArrowLeft": {
-			if (input.selectionStart === 0 && input.selectionEnd === 0)
+			if (input.selectionStart === 0 && input.selectionEnd === 0) {
+				const prev = input.previousElementSibling
+				prev.focus()
+				prev.selecrionStart = prev.value.length - 1
+				prev.selectionEnd = prev.value.length - 1
+
+			}
+			break
 		}
 
 		default: {
@@ -27,5 +34,5 @@ document.addEventListener("keydown", e => {
 
 function isConnectedInput(input) {
 	const parent = input.closest("[data-connected-inputs]")
-	return target.matches("input") && parent != null
+	return input.matches("input") && parent != null
 }
